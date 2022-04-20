@@ -1,0 +1,48 @@
+.body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+
+.bg {
+    position: fixed;
+    background-color: black;
+}
+
+.logo {
+    color: rgb(70, 12, 70);
+    font-style: italic;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px 300px 0px 15px;
+}
+
+.menuzinho {
+    background-color: black;
+    border: 3px rgb(122, 12, 122);
+    border-radius: 10px;
+    border-style: inset;
+    width: 10px;
+    height: 15px;
+}
+
+.sun {
+    color: rgb(248, 208, 31);
+}
+
+.sun:hover {
+    color: rgb(248, 244, 31);
+}
+
+.hr {
+    color: rgb(238, 9, 9);
+}
+
+.titulo {
+    color: rgb(168, 64, 104);
+}
+
+.subtitulo {
+    color: rgb(190, 68, 190);
+    font-family: 'Courier New', Courier, monospace;
+}
