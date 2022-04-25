@@ -18,12 +18,12 @@
     <nav class="navbar navbar-expand-lg bg">
         <div class="container">
             <a href="#">
-                <img src="https://cdn.pixabay.com/photo/2014/04/03/10/22/butterfly-310238_960_720.png" alt="" width="70px">
+                <img src="https://cdn.pixabay.com/photo/2014/04/03/10/22/butterfly-310238_960_720.png" alt=""
+                    width="70px">
             </a>
             <h1 class="logo">VB</h1>
-            <button class=" menuzinho" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class=" menuzinho" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             </button>
             <div class="collapse navbar-collapse container" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -59,10 +59,66 @@
         </div>
     </nav>
     <!-- /Menu -->
-    <div class="container mt-3">
-        <h1 class="titulo text-center">Sobre mim</h1>
-        <h5 class="subtitulo mt-4">Histórico acadêmico/profissional</h5>
+
+    <!-- Sobre -->
+    <h1 class="titulo text-center mt-3">Sobre mim</h1>
+    <div class="container divtextos">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-8">
+                        <div class="card border-0 mt-3">
+                            <div class="card-body">
+                                <h5 class="card-title subtitulo text-center">Histórico</h5>
+                                <h6 class="card-subtitle mb-2 subtitulo text-center">Profissional/Acadêmico</h6>
+                                <p class="card-text text-light">Sempre procurei uma carreira que realmente gostasse e
+                                    quisesse me dedicar, isso aumentou meu amor pelo aprendizado, já que naveguei por
+                                    várias áreas, estudando. Cheguei a fazer um curso de extensão em psicanálise, que me
+                                    ajudou a trabalhar meu lado empático, minha comunicação e autoconhecimento. E um de
+                                    letras, gosto muito de escrever e por minhas ideias no papel.<br>
+                                    No começo de 2021, minha mãe me indicou um curso de
+                                    <span id="pontoinhos">...</span><span id="leiaMais"> introdução à programação em
+                                        Java, foi assim que eu me apaixonei pela área e decidi me dedicar 100% à
+                                        programação.<br>
+                                        Além disso, comecei um curso em Javascript, conheço HTML
+                                        e CSS, e sou formada, como Desenvolvedora Web Java Jr Full Stack, no Bootcamp da
+                                        Generation Brasil, onde pode crescer nos conhecimentos técnicos, como
+                                        aprofundamento
+                                        na linguagem Java, SQL básico, aprendi frameworks como Spring Boot e Angular.
+                                        <br>
+                                        Também pude desenvolver habilidades comportamentais,
+                                        como perda da timidez, autoconfiança, trabalho em equipe e melhorar o
+                                        autoconhecimento. Finalizei, recentemente, um curso básico em React e retomei o
+                                        curso de JavaScript, aprendendo Node.js. Sigo estudando e á procura de uma
+                                        oportunidade de crescer profissimente.</span>
+                                </p>
+                                <button onclick="mais()" id="btnLeiaMais">Leia Mais</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- /Sobre -->
+
+    <script>
+        function mais() {
+            let pontos = document.getElementById('pontinhos')
+            let maisTexto = document.getElementById('leiaMais')
+            let btn = document.getElementById('btnLeiaMais')
+
+            if (pontos.style.display === 'none') {
+                pontos.style.display = 'inline'
+                maisTexto.style.display = 'none'
+                btn.innerHTML = 'Leia Mais'
+            } else {
+                pontos.style.display = 'none'
+                maisTexto.style.display = 'inline'
+                btn.innerHTML = 'Esconder'
+            }
+        }
+    </script>
 </body>
 
 <!-- CSS only -->

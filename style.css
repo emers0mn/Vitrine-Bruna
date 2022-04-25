@@ -39,10 +39,25 @@
 }
 
 .titulo {
-    color: rgb(168, 64, 104);
+    color: rgb(55, 52, 204);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .subtitulo {
-    color: rgb(190, 68, 190);
+    color: rgb(173, 58, 173);
     font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.card-body {
+    background-color: black;
+}
+.card-body:hover{
+    border: 1px  rgb(245, 138, 138);
+    border-radius: 0.25rem; 
+    border-style: outset;
+}
+
+#leiaMais{
+    display: none;
 }
